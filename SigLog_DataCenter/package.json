@@ -1,0 +1,60 @@
+{
+  "name": "SigLog_DataCenter",
+  "version": "0.0.0",
+  "description": "SigLog_DataCenter is responsible for process siglog's data.",
+  "scripts": {
+    "start": "nodemon ./server/bin/www",
+    "test": "cross-env NODE_ENV=test mocha --recursive --compilers js:babel-register --require ./test/setup.js",
+    "test:watch": "npm test -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "http://dspx.com.br",
+  "dependencies": {
+    "babel-polyfill": "latest",
+    "bcrypt-nodejs": "latest",
+    "body-parser": "latest",
+    "classnames": "latest",
+    "cookie-parser": "latest",
+    "debug": "latest",
+    "express": "latest",
+    "express-flash": "latest",
+    "express-session": "latest",
+    "express-validator": "latest",
+    "moment": "latest",
+    "mongoose": "latest",
+    "morgan": "latest",
+    "nodemailer": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-redux": "latest",
+    "redux": "latest",
+    "static-favicon": "latest",
+    "underscore": "latest"
+  },
+  "devDependencies": {
+    "babel-core": "latest",
+    "babel-loader": "latest",
+    "babel-preset-es2015": "latest",
+    "babel-preset-react": "latest",
+    "babel-preset-react-hmre": "latest",
+    "babel-register": "latest",
+    "cross-env": "latest",
+    "expect": "latest",
+    "jsdom": "latest",
+    "mocha": "latest",
+    "node-libs-browser": "latest",
+    "raw-loader": "latest",
+    "react-addons-test-utils": "latest",
+    "style-loader": "latest",
+    "webpack": "latest",
+    "webpack-dev-middleware": "latest",
+    "webpack-hot-middleware": "latest"
+  }
+}

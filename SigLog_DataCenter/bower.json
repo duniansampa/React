@@ -1,0 +1,23 @@
+{
+  "name": "SigLog_DataCenter",
+  "description": "SigLog_DataCenter is responsible for process siglog's data.",
+  "main": "server/bin/www",
+  "authors": [
+    "Dunian Coutinho Sampa"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-css": "latest"
+  }
+}
