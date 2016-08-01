@@ -1,19 +1,13 @@
 var express 	= require('express');
 var router 		= express.Router();
-var home        = require('../controllers/home');
-var autenticar 	= require('../middleware/autenticar');
+var stormpath  =  require('express-stormpath');
+var home     = require('../controllers/home');
 
-	
-router.route('/')
-	  .get(home.login)
-	  .post(home.autenticacao);
 
-router.route('/home').get(autenticar, home.index);
-router.route('/logout').get(home.logout);
 
-router.route('/email')
-	  .get(autenticar, home.email)
-	  .post(home.enviar);
-
+ router.route('/me')
+ 	  .post(stormpath.loginRequired, home.autenticacao);
+ 
+router.route('*').get(home.index);
 
 module.exports = router;
